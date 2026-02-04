@@ -3,23 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{seo_description}}">
+    <meta name="keywords" content="{{seo_keywords}}">
+    <link rel="icon" href="{{site_icon_url}}" type="image/x-icon">
     <title>{{site_title}}</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style id="theme-vars">
-        :root {
-            /* 這裡會被 AI 替換成具體的顏色 */
-            --bg-primary: #ffffff;
-            --text-primary: #1a1a1a;
-            --accent-color: #3b82f6;
-            --secondary-color: #64748b;
-        }
-        
-        /* 這裡可以預設一些全域樣式，引用上面的變數 */
+        :root {}
         body { background-color: var(--bg-primary); color: var(--text-primary); }
         .btn-primary { background-color: var(--accent-color); color: var(--btn-text); }
     </style>
 </head>
-<body class="bg-gray-50" id="body">
+<body class="m-0 p-0" id="body">
     <header id="site-header">{{site_header}}</header>
     
     <main id="site-content">{{site_content}}</main>
